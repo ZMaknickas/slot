@@ -32,7 +32,7 @@ button.addEventListener('click', () => {
     const allMatch = generatedShapes.every(shape => shape === generatedShapes[0]);
 
     if (allMatch) {
-        score += 30;   // reward for win
+        score += 19;   // reward for win
         winAnimation(); 
     }
 
