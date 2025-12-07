@@ -12,7 +12,7 @@ button.addEventListener('click', () => {
     button.style.pointerEvents = "none";
     button.style.opacity = "0.4";
 
-    score -= 1; // subtract 1 immediately
+    score -= 2; // subtract 1 immediately
     scoreDisplay.textContent = score;
 
     let generatedShapes = [];
