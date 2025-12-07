@@ -28,9 +28,8 @@
 .circle {
     width: 80px;
     height: 80px;
-    background-color: rgb(255, 67, 67);
+    background-color: green;
     border-radius: 50%;
-    border: 4px rgb(60, 60, 60) solid;
 }
 
 .triangle {
@@ -38,22 +37,21 @@
     height: 0;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-bottom: 80px solid green;
+    border-bottom: 80px solid rgb(45, 45, 45);
 }
 
 .square {
     width: 80px;
     height: 80px;
-    background-color: rgb(36, 48, 54);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: rgb(230, 44, 44);
 }
 
 .star {
     width: 80px;
     height: 80px;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
-            50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    border: 4px rgb(60, 60, 60) solid;
-    background-color: rgb(141, 52, 229);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    background-color: rgb(252, 161, 57);
 }
 .button {
     display: flex;
@@ -86,6 +84,16 @@
     background-color: #f5f5f5;
     color: #333;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.points {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    font-family: monospace;
+    font-size: 16px;
 }
 footer {
     font-family: 'Gill Sans';

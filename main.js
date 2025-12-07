@@ -36,12 +36,27 @@ button.addEventListener('click', () => {
                 // After last slot is updated, check for win
                 if (index === slots.length - 1) {
                     const allMatch = generatedShapes.every(shape => shape === generatedShapes[0]);
-                    if (allMatch) {
+                    let winShape=generatedShapes[0];;
+                    if (allMatch && winShape==='star') {
+                        score += 50;
+                        scoreDisplay.textContent = score;
+                        winAnimation();
+                    }
+                    if (allMatch && winShape==='square') {
+                        score += 40;
+                        scoreDisplay.textContent = score;
+                        winAnimation();
+                    }
+                    if (allMatch && winShape==='circle') {
+                        score += 30;
+                        scoreDisplay.textContent = score;
+                        winAnimation();
+                    }
+                    if (allMatch && winShape==='triangle') {
                         score += 20;
                         scoreDisplay.textContent = score;
                         winAnimation();
                     }
-
                     // Re-enable button after all shapes appear
                     button.style.pointerEvents = "auto";
                     button.style.opacity = "1";
